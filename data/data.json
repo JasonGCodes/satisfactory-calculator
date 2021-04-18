@@ -679,6 +679,12 @@
             "key_name": "cooling-system",
             "tier": 8,
             "stack_size": 100
+        },
+        {
+            "name": "Nitrogen Gas",
+            "key_name": "nitrogen-gas",
+            "tier": 8,
+            "stack_size": 0
         }
     ],
     "recipes": [
