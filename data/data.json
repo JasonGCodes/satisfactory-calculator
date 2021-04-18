@@ -49,6 +49,13 @@
             "max": 4
         },
         {
+            "name": "Blender",
+            "key_name": "blender",
+            "category": "crafting4",
+            "power": 75,
+            "max": 4
+        },
+        {
             "name": "Smelter",
             "key_name": "smelter",
             "category": "smelting1",
@@ -105,6 +112,13 @@
             "category": "oil",
             "base_rate": 120,
             "power": 40
+        },
+        {
+            "name": "Resource Well Extractor",
+            "key_name": "resource-well-extractor",
+            "category": "well",
+            "base_rate": 60,
+            "power": 0
         }
     ],
     "items": [
@@ -639,7 +653,7 @@
         {
             "name": "Electromagnetic Control Rod",
             "key_name": "em-control-rod",
-            "tier": 7,
+            "tier": 8,
             "stack_size": 100
         },
         {
@@ -652,6 +666,18 @@
             "name": "Iodine Infused Filter",
             "key_name": "iodine-infused-filter",
             "tier": 7,
+            "stack_size": 100
+        },
+        {
+            "name": "Aluminum Casing",
+            "key_name": "aluminum-casing",
+            "tier": 7,
+            "stack_size": 200
+        },
+        {
+            "name": "Cooling System",
+            "key_name": "cooling-system",
+            "tier": 8,
             "stack_size": 100
         }
     ],
@@ -2008,10 +2034,10 @@
             "category": "refining",
             "time": 6,
             "ingredients": [
-                ["bauxite", 7],
-                ["water", 10]
+                ["bauxite", 12],
+                ["water", 18]
             ],
-            "product": ["alumina-solution", 8]
+            "product": ["alumina-solution", 12]
         },
 		{
             "name": "Aluminum Scrap",
@@ -2020,7 +2046,7 @@
             "time": 1,
             "ingredients": [
                 ["alumina-solution", 4],
-                ["petroleum-coke", 1]
+                ["coal", 4]
             ],
             "product": ["aluminum-scrap", 6]
         },
@@ -2028,10 +2054,10 @@
             "name": "Alternate: Electrode-Aluminum Scrap",
             "key_name": "alt-aluminum-scrap",
             "category": "refining",
-            "time": 2,
+            "time": 4,
             "ingredients": [
-                ["alumina-solution", 3],
-                ["coal", 1]
+                ["alumina-solution", 12],
+                ["petroleum-coke", 4]
             ],
             "product": ["aluminum-scrap", 5]
         },
@@ -2039,10 +2065,10 @@
             "name": "Aluminum Ingot",
             "key_name": "aluminum-ingot",
             "category": "smelting2",
-            "time": 3,
+            "time": 4,
             "ingredients": [
-                ["aluminum-scrap", 12],
-                ["silica", 7]
+                ["aluminum-scrap", 6],
+                ["silica", 5]
             ],
             "product": ["aluminum-ingot", 4]
         },
@@ -2050,17 +2076,17 @@
             "name": "Alternate: Pure Aluminum Ingot",
             "key_name": "alt-aluminum-ingot",
             "category": "smelting1",
-            "time": 5,
+            "time": 2,
             "ingredients": [
-                ["aluminum-scrap", 12]
+                ["aluminum-scrap", 2]
                ],
-            "product": ["aluminum-ingot", 3]
+            "product": ["aluminum-ingot", 1]
         },
         {
             "name": "Alclad Aluminum Sheet",
             "key_name": "alclad-aluminum-sheet",
             "category": "crafting2",
-            "time": 8,
+            "time": 6,
             "ingredients": [
                 ["aluminum-ingot", 8],
                 ["copper-ingot", 3]
@@ -2071,32 +2097,31 @@
             "name": "Heat Sink",
             "key_name": "heat-sink",
             "category": "crafting2",
-            "time": 12,
+            "time": 8,
             "ingredients": [
-                ["alclad-aluminum-sheet", 8],
-                ["rubber", 14]
+                ["alclad-aluminum-sheet", 5],
+                ["copper-sheet", 3]
             ],
-            "product": ["heat-sink", 2]
+            "product": ["heat-sink", 1]
         },
         {
             "name": "Alternate: Heat Exchanger",
             "key_name": "alt-heat-sink",
             "category": "crafting2",
-            "time": 32,
+            "time": 6,
             "ingredients": [
-                ["alclad-aluminum-sheet", 20],
-                ["copper-sheet", 30]
+                ["aluminum-casing", 3],
+                ["rubber", 3]
             ],
-            "product": ["heat-sink", 7]
+            "product": ["heat-sink", 1]
         },
         {
             "name": "Radio Control Unit",
             "key_name": "radio-control-unit",
             "category": "crafting3",
-            "time": 24,
+            "time": 48,
             "ingredients": [
-                ["heat-sink", 4],
-                ["rubber", 16],
+                ["aluminum-casing", 32],
                 ["crystal-oscillator", 1],
                 ["computer", 1]
             ],
@@ -2106,11 +2131,11 @@
             "name": "Alternate: Radio Control Unit",
             "key_name": "alt-radio-control-unit",
             "category": "crafting3",
-            "time": 48,
+            "time": 16,
             "ingredients": [
-                ["heat-sink", 10],
-                ["supercomputer", 1],
-                ["quartz-crystal", 30]
+                ["heat-sink", 4],
+                ["high-speed-connector", 2],
+                ["quartz-crystal", 12]
             ],
             "product": ["radio-control-unit", 3]
         },
@@ -2120,7 +2145,7 @@
             "category": "crafting3",
             "time": 32,
             "ingredients": [
-                ["heat-sink", 4],
+                ["cooling-system", 4],
                 ["radio-control-unit", 2],
                 ["motor", 4],
                 ["rubber", 24]
@@ -2134,9 +2159,9 @@
             "time": 64,
             "ingredients": [
                 ["motor", 7],
-                ["radio-control-unit", 5],
-                ["ai-limiter", 9],
-                ["stator", 7]
+                ["radio-control-unit", 9],
+                ["em-control-rod", 5],
+                ["rotor", 7]
             ],
             "product": ["turbo-motor", 3]
         },
@@ -2144,14 +2169,13 @@
             "name": "Battery",
             "key_name": "battery",
             "category": "crafting3",
-            "time": 32,
+            "time": 6,
             "ingredients": [
-                ["alclad-aluminum-sheet", 8],
-                ["wire", 16],
-                ["sulfur", 20],
-                ["plastic", 8]
+                ["sulfuric-acid", 5],
+                ["alumina-solution", 4],
+                ["aluminum-casing", 2]
             ],
-            "product": ["battery", 3]
+            "product": ["battery", 20]
         },
         {
             "name": "Sulfuric Acid",
@@ -2162,7 +2186,7 @@
                 ["sulfur", 5],
                 ["water", 5]
             ],
-            "product": ["sulfuric-acid", 10]
+            "product": ["sulfuric-acid", 5]
         },
         {
             "name": "Uranium Pellet",
@@ -2179,25 +2203,26 @@
             "name": "Encased Uranium Cell",
             "key_name": "uranium-cell",
             "category": "crafting2",
-            "time": 60,
+            "time": 12,
             "ingredients": [
-                ["uranium-pellet", 40],
-                ["concrete", 9]
+                ["uranium", 10],
+                ["concrete", 3],
+                ["sulfuric-acid", 8]
             ],
-            "product": ["uranium-cell", 10]
+            "product": ["uranium-cell", 5]
         },
         {
             "name": "Alternate: Infused Uranium Cell",
             "key_name": "alt-uranium-cell",
             "category": "crafting3",
-            "time": 120,
+            "time": 12,
             "ingredients": [
-                ["uranium-pellet", 40],
-                ["sulfur", 45],
-                ["silica", 45],
-                ["quickwire", 75]
+                ["uranium", 5],
+                ["silica", 3],
+                ["sulfur", 5],
+                ["quickwire", 15]
             ],
-            "product": ["uranium-cell", 35]
+            "product": ["uranium-cell", 4]
         },
         {
             "name": "Electromagnetic Control Rod",
@@ -2214,12 +2239,12 @@
             "name": "Alternate: Electromagnetic Connection Rod",
             "key_name": "alt-em-control-rod",
             "category": "crafting2",
-            "time": 60,
+            "time": 15,
             "ingredients": [
-                ["stator", 10],
-                ["high-speed-connector", 5]
+                ["stator", 2],
+                ["high-speed-connector", 1]
             ],
-            "product": ["em-control-rod", 10]
+            "product": ["em-control-rod", 2]
         },
         {
             "name": "Nuclear Fuel Rod",
@@ -2227,7 +2252,7 @@
             "category": "crafting3",
             "time": 150,
             "ingredients": [
-                ["uranium-cell", 25],
+                ["uranium-cell", 50],
                 ["encased-industrial-beam", 3],
                 ["em-control-rod", 5]
             ],
@@ -2239,7 +2264,7 @@
             "category": "crafting3",
             "time": 300,
             "ingredients": [
-                ["uranium-cell", 50],
+                ["uranium-cell", 100],
                 ["em-control-rod", 10],
                 ["crystal-oscillator", 3],
                 ["beacon", 6]
@@ -2257,6 +2282,30 @@
                 ["rubber", 2]
             ],
             "product": ["iodine-infused-filter", 1]
+        },
+        {
+            "name": "Alternate: Alclad Casing",
+            "key_name": "alt-aluminum-casing",
+            "category": "crafting2",
+            "time": 8,
+            "ingredients": [
+                ["aluminum-ingot", 20],
+                ["copper-ingot", 10]
+            ],
+            "product": ["aluminum-casing", 15]
+        },
+        {
+            "name": "Cooling System",
+            "key_name": "cooling-system",
+            "category": "crafting4",
+            "time": 10,
+            "ingredients": [
+                ["heat-sink", 2],
+                ["rubber", 2],
+                ["water", 5],
+                ["nitrogen-gas", 25]
+            ],
+            "product": ["cooling-system", 1]
         }
     ],
     "resources": [
@@ -2303,6 +2352,10 @@
 		    {
             "key_name": "water",
             "category": "water"
+        },
+		{
+            "key_name": "nitrogen-gas",
+            "category": "well"
         }
     ]
 }
