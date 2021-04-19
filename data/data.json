@@ -2052,7 +2052,7 @@
             "time": 1,
             "ingredients": [
                 ["alumina-solution", 4],
-                ["coal", 4]
+                ["coal", 2]
             ],
             "product": ["aluminum-scrap", 6]
         },
@@ -2131,7 +2131,7 @@
                 ["crystal-oscillator", 1],
                 ["computer", 1]
             ],
-            "product": ["radio-control-unit", 1]
+            "product": ["radio-control-unit", 2]
         },
         {
             "name": "Alternate: Radio Control Unit",
