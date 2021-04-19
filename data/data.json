@@ -2097,7 +2097,7 @@
                 ["aluminum-ingot", 8],
                 ["copper-ingot", 3]
             ],
-            "product": ["alclad-aluminum-sheet", 4]
+            "product": ["alclad-aluminum-sheet", 3]
         },
         {
             "name": "Heat Sink",
