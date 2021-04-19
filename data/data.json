@@ -2094,8 +2094,8 @@
             "category": "crafting2",
             "time": 6,
             "ingredients": [
-                ["aluminum-ingot", 8],
-                ["copper-ingot", 3]
+                ["aluminum-ingot", 3],
+                ["copper-ingot", 1]
             ],
             "product": ["alclad-aluminum-sheet", 3]
         },
