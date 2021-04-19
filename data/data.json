@@ -2290,6 +2290,16 @@
             "product": ["iodine-infused-filter", 1]
         },
         {
+            "name": "Aluminum Casing",
+            "key_name": "aluminum-casing",
+            "category": "crafting1",
+            "time": 2,
+            "ingredients": [
+                ["aluminum-ingot", 3]
+            ],
+            "product": ["aluminum-casing", 2]
+        },
+        {
             "name": "Alternate: Alclad Casing",
             "key_name": "alt-aluminum-casing",
             "category": "crafting2",
